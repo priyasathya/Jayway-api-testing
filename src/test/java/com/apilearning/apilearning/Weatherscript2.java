@@ -7,7 +7,7 @@ import com.jayway.restassured.response.Response;
 
 import static com.jayway.restassured.RestAssured.*;
 public class Weatherscript2 {
-	@Test
+	//@Test
 	public void Test_03(){
 	Response response = given().
 			param("q" ,"London").
@@ -28,6 +28,7 @@ public class Weatherscript2 {
 	System.out.println("Sttus code:"+response.statusCode());
 	Assert.assertEquals(response.statusCode(), 200);
 	System.out.println(response.asString());
+	//System.out.println(response);
 	
 
 	

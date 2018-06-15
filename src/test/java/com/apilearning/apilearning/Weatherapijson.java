@@ -9,7 +9,7 @@ import static com.jayway.restassured.RestAssured.*;
 
 public class Weatherapijson {
 
-	//@Test
+	@Test
 	public void Jsonparsing(){
 		String weatherreport = given().
 				parameter("id","2172797").
